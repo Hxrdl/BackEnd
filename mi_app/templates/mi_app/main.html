@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <link rel="stylesheet" href="{% static 'mi_app/css/main.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="tittle">Presentación de grupo</h1>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-toggle-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <img id="profile" src="{% static 'mi_app/images/perfil-R.jpg' %}" alt="1ro">
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div style="text-align: center;">
+                        <strong>Rodrigo Santander</strong>
+                    </div>
+                    <br>
+                    <p>
+                        Tengo 19 años, soy estudiante de Analista Programador. Siempre intento estar explorando nuevas ideas, ya sea aprendiendo programación, desarrollando proyectos o experimentando con electrónica.
+                    </p>
+
+                    <p>
+                        Hago mucho deporte. Soy una persona organizada y curiosa; la mayor parte del tiempo estoy buscando entender cómo funcionan las cosas y cómo puedo mejorarlas o reutilizarlas de manera creativa.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-toggle-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <img id="profile" src="{% static 'mi_app/images/perfil-D.jpeg' %}" alt="1ro">
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div style="text-align: center;">
+                        <strong>Diego Zapata</strong>
+                    </div>
+                    <br>
+                    <p>
+                        Hola, soy Diego zapata, estudiante analista programador. Me gusta aprender cosas nuevas en el ámbito de la programación.                       
+                    </p> 
+
+                    <p>
+                        Además, me gusta el futbol y los videojuegos, cosas que me permiten desconectar y mantener un equilibrio.
+                    </p>
+
+                    <p>
+                        Mi objetivo es seguir perfeccionando mis habilidades y seguir creciendo tanto como profesionalmente y tambien personalmente
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-toggle-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <img id="profile" src="{% static 'mi_app/images/perfil-M.jpg' %}" alt="1ro">
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div style="text-align: center;">
+                        <strong>Martin Aviles</strong>
+                    </div>
+                    <br>
+                    <p>
+                        Hola, soy Martin Aviles.
+                    </p>
+
+                    <p>
+                        Tengo 24 años, reido en San Joaquin.
+                    </p>
+
+                    <p>
+                        Estoy estudiando analisis en programación y espero ser mejor cada dia 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="button-habilities" onclick="IrHabilidades()" style="margin-left: 88.5%; border-radius: 15px; ">Habilidades  ></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{% static 'mi_app/js/main.js' %}"></script>
+</body>
+</html>
